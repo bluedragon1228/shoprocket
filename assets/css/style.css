@@ -253,6 +253,27 @@ body .bg--dark .color--secondary, body .bg--dark b {
     font-weight: 300;
     color: #fff;
 }
+img.lazyloaded {
+    opacity: 1;
+}
+.color--primary {
+    color: var(--color--primary) !important;
+}
+.lead {
+    color: #666666;
+}
+a:hover {
+    color: var(--color-brand-primary);
+    text-decoration: underline;
+}
+p+a:not(.btn) {
+    font-size: 16px;
+    line-height: 2.16666667em;
+}
+.switchable {
+    position: relative;
+}
+
 /**************************Responsive******************/
 @media (min-width: 1200px) {
     .container {
@@ -268,6 +289,9 @@ body .bg--dark .color--secondary, body .bg--dark b {
         -webkit-transition: all .2s;
         -o-transition: all .2s;
         transition: all .2s;
+    }
+    .switchable__text a {
+        font-family: uniform bold, open sans, helvetica, arial, sans-serif;
     }
     .bar.pos-fixed:not([class*=bg-]) {
         background: #233642;
