@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    $(".sr-category-filter").click(function(){
+      $("#categories-filter .sr-dropdown-content").toggleClass("sr-hide");
+    });
+    $(".sr-product-filters-filter").click(function(){
+      $("#filters-filter .sr-dropdown-content").toggleClass("sr-hide");
+    });
     $('.register-tnc').on('click', function(e) {
         let tncDialog = bootbox.dialog({
             message: ' ',
