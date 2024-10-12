@@ -12,7 +12,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: uniform bold, open sans, helvetica, arial, sans-serif;
+    font-family: Uniform Bold, open sans, helvetica, arial, sans-serif;
     color: var(--color--secondary);
     -webkit-font-variant-ligatures: common-ligatures;
     font-variant-ligatures: common-ligatures;
@@ -56,7 +56,7 @@ footer, section {
     top: 5px;
 }
 .menu-horizontal>li, .menu-vertical>li {
-     font-family: "uniform bold", "Open Sans", Helvetica, Arial, sans-serif;
+     font-family: "Uniform Bold", "Open Sans", Helvetica, Arial, sans-serif;
     padding: 0;
 }
 .menu-horizontal>li>.modal-instance>a, .menu-horizontal>li>a {
@@ -214,7 +214,7 @@ body .btn-orange {
     border-color: #f8971d !important;
 }
 body .latest-stats b {
-    font-family: uniform bold, open sans, helvetica, arial, sans-serif;
+    font-family: Uniform Bold, open sans, helvetica, arial, sans-serif;
     -webkit-font-variant-ligatures: common-ligatures;
     font-variant-ligatures: common-ligatures;
 }
@@ -290,6 +290,73 @@ pre {
 .bg--secondary {
     background: var(--bg--secondary);
 }
+span.featured {
+    font-style: italic;
+    display: block;
+    text-align: center;
+    width: 150px;
+    background: #fff;
+    margin: -17px auto 0;
+    position: relative;
+}
+body .latest-stats b {
+    font-family: "Uniform Bold", "Open Sans", Helvetica, Arial, sans-serif;
+    -webkit-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+}
+body .latest-stats, body .latest-stats b {
+    font-weight: bolder !important;
+}
+/*Rating Section*/
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.carousel-inner {
+    width: calc(100%* 2);
+    display: inline-block;
+    animation: scrolling 90s linear infinite;
+    animation-direction: reverse;
+}
+.carousel-inner {
+    white-space: nowrap;
+    display: inline-block;
+}
+.carousel-item {
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 8px;
+}
+.carousel-item h4 {
+    margin: 0;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+img.review-stars {
+    width: 100px;
+}
+.review-body {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    margin: 0;
+    white-space: initial;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+p strong {
+    color: #252525;
+}
+/*End*/
 .ratings {
     gap: 50px;
 }
@@ -461,7 +528,7 @@ footer.space--xs, section.space--xs {
         transition: all .2s;
     }
     .switchable__text a {
-        font-family: uniform bold, open sans, helvetica, arial, sans-serif;
+        font-family: Uniform Bold, open sans, helvetica, arial, sans-serif;
     }
     .bar.pos-fixed:not([class*=bg-]) {
         background: #233642;

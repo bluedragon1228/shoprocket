@@ -1,6 +1,6 @@
  @font-face {
-    font-family: "uniform bold";
-    src: local("uniform bold"), url(../../assets/fonts/uniform-bold-webfont.woff2) format("woff2"), url(../../assets/fonts/uniform-bold-webfont.woff) format("woff");
+    font-family: "Uniform Bold";
+    src: local("Uniform Bold"), url(../../assets/fonts/uniform-bold-webfont.woff2) format("woff2"), url(../../assets/fonts/uniform-bold-webfont.woff) format("woff");
     font-weight: 400;
     font-style: normal;
     unicode-range: U+000-5FF;
@@ -284,7 +284,7 @@ body .payment-methods {
     padding: 0;
 }
 .menu-horizontal>li, .menu-vertical>li, body .latest-stats b {
-    font-family: "uniform bold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Uniform Bold", "Open Sans", Helvetica, Arial, sans-serif;
 }
 @keyframes fadein {
     0% {
@@ -5136,7 +5136,7 @@ body .header-logo {
     display: block;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: "uniform bold", Helvetica, Arial, sans-serif;
+    font-family: "Uniform Bold", Helvetica, Arial, sans-serif;
     color: #233642;
     font-weight: 500;
     font-variant-ligatures: common-ligatures;
@@ -5905,7 +5905,7 @@ body i[class^=fa]:before {
     outline: #f8971d solid 1px;
     color: #fff;
     border-radius: 5px 5px 0 0;
-    font-family: uniform bold,open sans,helvetica,arial,sans-serif;
+    font-family: Uniform Bold,open sans,helvetica,arial,sans-serif;
     font-size: 14px
 }
 
@@ -6980,5 +6980,27 @@ body {
     transform: scale(1);
     opacity: 0;
     box-shadow: none;
+}
+}
+@keyframes pulse {
+0% {
+    opacity: .5;
+}
+
+70% {
+    opacity: 0;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+}
+100% {
+    opacity: 0;
+}
+}
+@keyframes scrolling {
+0% {
+    transform: translateX(-100%);
+}
+100% {
+    transform: translateX(0);
 }
 }
