@@ -5577,7 +5577,7 @@ body i[class^=fa]:before {
 }
 
 .pricing i:before {
-    content: "";
+/*    content: "";*/
     width: 15px;
     height: 15px
 }

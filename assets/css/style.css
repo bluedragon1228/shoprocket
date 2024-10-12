@@ -299,6 +299,218 @@ span.featured {
     margin: -17px auto 0;
     position: relative;
 }
+/*Packages*/
+.input-checkbox label:hover, .input-checkbox.input-checkbox--switch label:hover:before {
+    border-color: var(--color-brand-primary);
+}
+.input-checkbox.input-checkbox--switch label {
+    width: 3.71428571em;
+    border-radius: 60px;
+    font-size: 14px;
+}
+.input-checkbox label {
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    position: relative;
+}
+.text-center .input-checkbox label, .text-center .input-radio label {
+    margin: 0 auto;
+}
+.input-checkbox.input-checkbox--switch label:before {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-color: var(--color-brand-primary);
+    background: var(--color-brand-primary);
+    opacity: 1;
+    left: 2px;
+    top: 2px;
+}
+.input-checkbox label:before {
+    content: "";
+    left: 0;
+    border-radius: 6px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-brand-primary);
+    opacity: 0;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+}
+[class*=input-] label, input, select, textarea {
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+}
+.input-checkbox label, .input-radio label, .input-select label {
+    display: block !important;
+    cursor: pointer;
+}
+.input-checkbox label, .input-radio label {
+    width: 1.85714286em;
+    height: 1.85714286em;
+    border-radius: 6px;
+}
+.input-checkbox.input-checkbox--switch input:checked+label {
+    background: var(--color-brand-primary);
+}
+
+.input-checkbox input:checked+label {
+    border-color: var(--color-brand-primary);
+    background-color: var(--color-brand-primary);
+}
+.input-checkbox.input-checkbox--switch input:checked+label:before {
+    -webkit-animation: none !important;
+    animation: none !important;
+    background: #fff;
+    border-color: #fff;
+    -webkit-transform: translateX(1.85714286em);
+    -ms-transform: translateX(1.85714286em);
+    transform: translateX(1.85714286em);
+}
+.pricing label[data-toggle=tooltip]::before {
+    content: url('../../assets/images/info-circle.svg');
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 5px;
+    -webkit-filter: invert(100%);
+    filter: invert(40%);
+}
+.pricing-5 ul.text-start li {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: relative;
+    font-size: 16px !important;
+}
+
+.pricing-5 .text-start li {
+    padding-left: 50px;
+}
+.input-checkbox label {
+    font-weight: 400;
+    background-color: #fdfdfd;
+    -webkit-appearance: none;
+    border: 1px solid #ececec;
+}
+input[type], select, textarea {
+    padding-left: .92857143em;
+}
+.input-checkbox input, .input-radio input, .input-select input {
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+}
+body .select2-container--default .select2-selection--multiple, input[type], select, textarea {
+    background-color: #fdfdfd;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    border: 1px solid #ececec;
+}
+input[type=checkbox], input[type=radio] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+.input-checkbox, .input-radio, .switchable>div[class*=col-] {
+    padding: 0;
+}
+.input-checkbox, .input-radio, .input-select, a {
+    display: inline-block;
+}
+.input-checkbox, .input-icon i, .input-radio, .input-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.pricing-5 .pricing__title {
+    padding: 1.625em 0;
+    position: relative;
+}
+.pricing h3:first-child {
+    margin: 0;
+}
+.pricing-5 h3 {
+    font-size: 24px;
+}
+.pricing .price {
+    width: 100%;
+}
+.price span.h1 {
+    height: 103px;
+}
+span.h1:not(.inline-block), span.h2:not(.inline-block), span.h3:not(.inline-block), span.h4:not(.inline-block), span.h5:not(.inline-block), span.h6:not(.inline-block) {
+    display: block;
+}
+.pricing .h1 {
+    font-size: 64px;
+    line-height: 1.10169491525424em;
+    margin-bottom: 0;
+}
+.price .sign {
+    vertical-align: super;
+    font-size: 16px;
+    margin-right: -10px;
+}
+.price .month {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: -13px;
+}
+.pricing a.btn__text, .pricing-page .pricing a.btn__text * {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    padding: 15px 25px;
+    font-weight: 700;
+}
+/*end Packages*/
+/*FAQ Section*/
+.faq-section h4 {
+    font-size: 50px;
+    padding-top: 50px;
+}
+.faq {
+    padding: 50px;
+}
+.faq, .slide-holder {
+    background-color: var(--bg--secondary);
+}   
+svg.faq-mark, svg.quote-mark {
+    position: absolute;
+    top: -30px;
+}
+svg.faq-mark {
+    left: 50px;
+}
+svg.faq-mark, svg.quote-mark {
+    fill: var(--color-brand-primary);
+}
+svg {
+    overflow: hidden;
+}
+.accordion-item {
+    background-color: var(--bg--secondary);
+}
+.accordion-button {
+    background-color: var(--bg--secondary);
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: var(--bg--secondary);
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+/*end FAQ Section*/
 body .latest-stats b {
     font-family: "Uniform Bold", "Open Sans", Helvetica, Arial, sans-serif;
     -webkit-font-variant-ligatures: common-ligatures;
@@ -608,6 +820,16 @@ footer.space--xs, section.space--xs {
     }
     .menu-horizontal li:not(:last-child) {
         margin-right: 1.23809524em;
+    }
+    .pricing-5 .pricing__title {
+        padding: 1.625em 0;
+        position: relative;
+        flex: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 300px;
     }
 }
 @media all and (max-width:768px) {
