@@ -225,6 +225,34 @@ body .latest-stats, body .latest-stats b {
 body .bg--dark .color--secondary, body .bg--dark b {
     color: var(--color--primary) !important;
 }
+#home_video_modal .modal-body {
+    position: relative;
+    background: #233642;
+}
+.bootbox.modal .modal-body {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+#home_video_modal .modal-body span.close {
+    position: absolute;
+    top: 4px;
+    right: 7px;
+}
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    cursor: pointer;
+}
+.fe-bootbox-modal span.close:before {
+    content: "x";
+    font-weight: 300;
+    color: #fff;
+}
 /**************************Responsive******************/
 @media (min-width: 1200px) {
     .container {
