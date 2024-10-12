@@ -198,7 +198,6 @@ $(document).on('click', '.play-btn', function(e) {
 $(document).on('click', '.review', function() {
     displayReviewInBootbox($(this));
 });
-
 function displayReviewInBootbox(currentSnippet) {
     let title = currentSnippet.find('h4').text();
     let content = currentSnippet.find('.review-body').html();
