@@ -299,6 +299,52 @@ span.featured {
     margin: -17px auto 0;
     position: relative;
 }
+/*Selling Tools*/
+.box.height-1 {
+    height: 390px;
+}
+.box {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    display: block;
+    background: var(--bg--secondary);
+}
+/*end Selling Tools*/
+/*Stores Sections*/
+.slide-section .col-md-5 {
+    z-index: 10;
+}
+.slide-section .h1 {
+    width: 130%;
+    max-width: 130%;
+    font-size: 50px;
+    z-index: 10;
+}
+.slide-holder {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 75px 50px 75px 150px;
+    z-index: 1;
+}
+.slides, .slides li, .trust a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.slides {
+    min-height: 475px;
+}
+.bg--white h1, .bg--white h2, .bg--white h3, .bg--white h4, .bg--white h5, .bg--white h6, .bg--white i {
+    color: var(--color--secondary);
+}
+.h3, h3 {
+    margin-bottom: 1.04em;
+}
+.h3, blockquote, h3 {
+    font-size: 1.78571429em;
+    line-height: 1.5em;
+}
+/*end Stores Sections*/
 /*Packages*/
 .input-checkbox label:hover, .input-checkbox.input-checkbox--switch label:hover:before {
     border-color: var(--color-brand-primary);
