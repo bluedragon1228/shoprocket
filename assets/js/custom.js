@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    $(".sr-category-filter").click(function(){
-      $("#categories-filter .sr-dropdown-content").toggleClass("sr-hide");
+    $(".prod-category-filter").click(function(){
+      $("#categories-filter .prod-dropdown-content").toggleClass("prod-hide");
     });
-    $(".sr-product-filters-filter").click(function(){
-      $("#filters-filter .sr-dropdown-content").toggleClass("sr-hide");
+    $(".pro-product-filters-filter").click(function(){
+      $("#filters-filter .prod-dropdown-content").toggleClass("prod-hide");
     });
     $('.register-tnc').on('click', function(e) {
         let tncDialog = bootbox.dialog({
@@ -74,7 +74,7 @@ $(document).ready(function() {
     // });
 
     // Get the navbar
-    var navbar = document.getElementById("menu1");
+    var navbar = document.getElementById("menu-area");
     if (typeof navbar !== undefined && navbar !== null) {
         // When the user scrolls the page, execute myFunction
         window.onscroll = function() {stickyNav()};
@@ -148,7 +148,7 @@ $(document).ready(function() {
     }, 4000);
 });
 function InOut(elem) {
-    window.slides = elem;
+    window.testi-slides = elem;
     elem.delay()
     .fadeIn(function() {
         elem.delay(5000)
@@ -165,13 +165,13 @@ function InOut(elem) {
 }
 
 $(function() {
-  $('.slides li').fadeOut();
-  InOut($('.slides li:first'));
+  $('.testi-slides li').fadeOut();
+  InOut($('.testi-slides li:first'));
 });
 
-// $(document).on('mouseleave','.slides',  function() {
-//     $('.slides li').hide();
-//     InOut($('.slides li:first'));
+// $(document).on('mouseleave','.testi-slides',  function() {
+//     $('.testi-slides li').hide();
+//     InOut($('.testi-slides li:first'));
 // });
 
 //////////////// Utility Functions
