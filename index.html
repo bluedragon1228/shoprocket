@@ -936,18 +936,17 @@
                 <div class="row">
                 <!-- <div class="pro-products pro-product-list"></div> -->
                 <div class="product-wrap prod-embed" data-wrap-id="1">
-                    <div class="prod-element prod-filters-wrap" data-wrap-id="1" style="--pro-theme-align-content: center;">
-                        <div class="prod-container">
-                            <div class="prod-filter prod-search-wrapper" data-index="1"> <input type="text" name="pro-search-products"
-                                    class="prod-inputbox" placeholder="Search" aria-label="Search"> <img loading="lazy" alt="Search"
-                                    src="https://cdn.shoprocket.io/assets/images/close.svg" class="prod-hide prod-clear-trigger"> <img
-                                    loading="lazy" alt="Search" src="https://cdn.shoprocket.io/assets/images/pro-search.svg"
-                                    class="pro-search-trigger"> 
-                            </div>
-                            <div class="prod-filter prod-category-wrapper" data-index="2" id="categories-filter">
-                                <div class="prod-btn-group">
-                                    <div class="prod-category-filter" tabindex="0">Categories</div>
-                                    <ul class="prod-dropdown-content prod-hide">
+                    <div class="sr-element sr-filters-wrap" data-wrap-id="1" style="--sr-theme-align-content: center;">
+                        <div class="sr-container">
+                            <div class="sr-filter sr-search-wrapper" data-index="1"> <input type="text" name="sr-search-products"
+                                    class="sr-inputbox" placeholder="Search" aria-label="Search"> <img loading="lazy" alt="Search"
+                                    src="assets/images/close.svg" class="sr-hide sr-clear-trigger"> <img
+                                    loading="lazy" alt="Search" src="assets/images/sr-search.svg"
+                                    class="sr-search-trigger"> </div>
+                            <div class="sr-filter sr-category-wrapper" data-index="2" id="categories-filter">
+                                <div class="sr-btn-group">
+                                    <div class="sr-category-filter" tabindex="0">Categories</div>
+                                    <ul class="sr-dropdown-content sr-hide">
                                         <li class=""> <input type="checkbox" value="plants" id="cat-fil-1plants"> <label
                                                 for="cat-fil-1plants">plants</label> </li>
                                         <li class=""> <input type="checkbox" value="test" id="cat-fil-1test"> <label
@@ -955,90 +954,79 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="prod-filter product-filters-wrapper" data-index="3" id="filters-filter">
-                                <div class="prod-btn-group">
-                                    <div class="pro-product-filters-filter" tabindex="0">Filters</div>
-                                    <form id="pro-product-filters-form">
-                                        <ul class="prod-dropdown-content prod-hide">
-                                            <li class="pro-d-inline-block prod-price-filter"> <label
-                                                    class="prod-price-filter-label">Price</label>
-                                                <div class="prod-price-input">
-                                                    <div class="pro-input-group"> <label for="pro-input-min">£</label> <input
-                                                            type="number" name="pro-input-min" class="pro-input-min"
-                                                            placeholder="Min." width="55" value="0" min="0" max="1975"> </div>
-                                                    <span>-</span>
-                                                    <div class="pro-input-group"> <label for="pro-input-max">£</label> <input
-                                                            type="number" name="pro-input-max" class="pro-input-max"
-                                                            placeholder="Max." width="55" min="0" max="1975"> </div>
+                            <div class="sr-filter sr-product-filters-wrapper" data-index="3" id="filters-filter">
+                                <div class="sr-btn-group">
+                                    <div class="sr-product-filters-filter" tabindex="0">Filters</div>
+                                    <form id="sr-product-filters-form">
+                                        <ul class="sr-dropdown-content sr-hide">
+                                            <li class="sr-d-inline-block sr-price-filter"> <label
+                                                    class="sr-price-filter-label">Price</label>
+                                                <div class="sr-price-input">
+                                                    <div class="sr-input-group"> <label for="sr-input-min">£</label> <input type="number"
+                                                            name="sr-input-min" class="sr-input-min" placeholder="Min." width="55" value="0"
+                                                            min="0" max="1975"> </div> <span>-</span>
+                                                    <div class="sr-input-group"> <label for="sr-input-max">£</label> <input type="number"
+                                                            name="sr-input-max" class="sr-input-max" placeholder="Max." width="55" min="0"
+                                                            max="1975"> </div>
                                                 </div>
-                                                <div class="prod-price-slider">
-                                                    <div class="prod-price-slider-progress" style="left: 0%; right: 0%;"></div>
+                                                <div class="sr-price-slider">
+                                                    <div class="sr-price-slider-progress" style="left: 0%; right: 0%;"></div>
                                                 </div>
-                                                <div class="prod-price-range-input"> <input type="range" id="pro-range-min"
-                                                        name="pro-range-min" class="pro-range-min" min="0" value="0" step="1"
-                                                        max="1975"> <label for="pro-range-min" class="pro-range-min-label">Min</label>
-                                                    <input type="range" id="pro-range-max" name="pro-range-max" class="pro-range-max"
-                                                        min="0" step="1" max="1975"> <label for="pro-range-max"
-                                                        class="pro-range-max-label">Max</label> </div>
+                                                <div class="sr-price-range-input"> <input type="range" id="sr-range-min" name="sr-range-min"
+                                                        class="sr-range-min" min="0" value="0" step="1" max="1975"> <label
+                                                        for="sr-range-min" class="sr-range-min-label">Min</label> <input type="range"
+                                                        id="sr-range-max" name="sr-range-max" class="sr-range-max" min="0" step="1"
+                                                        max="1975"> <label for="sr-range-max" class="sr-range-max-label">Max</label> </div>
                                             </li>
-                                            <li class="pro-d-inline-block"> <label>size</label>
-                                                <ul class="pro-submenu prod-dropdown-content">
-                                                    <li> <input type="checkbox" value="78" data-pfilter="28"
-                                                            id="pfilter-fil-1small"> <label for="pfilter-fil-1small">small</label>
-                                                    </li>
-                                                    <li> <input type="checkbox" value="81" data-pfilter="28"
-                                                            id="pfilter-fil-1large"> <label for="pfilter-fil-1large">large</label>
-                                                    </li>
-                                                    <li> <input type="checkbox" value="86" data-pfilter="28"
-                                                            id="pfilter-fil-1medium"> <label
-                                                            for="pfilter-fil-1medium">medium</label> </li>
-                                                    <li> <input type="checkbox" value="449" data-pfilter="28"
-                                                            id="pfilter-fil-1750ml"> <label for="pfilter-fil-1750ml">750ml</label>
-                                                    </li>
+                                            <li class="sr-d-inline-block"> <label>size</label>
+                                                <ul class="sr-submenu sr-dropdown-content">
+                                                    <li> <input type="checkbox" value="78" data-pfilter="28" id="pfilter-fil-1small"> <label
+                                                            for="pfilter-fil-1small">small</label> </li>
+                                                    <li> <input type="checkbox" value="81" data-pfilter="28" id="pfilter-fil-1large"> <label
+                                                            for="pfilter-fil-1large">large</label> </li>
+                                                    <li> <input type="checkbox" value="86" data-pfilter="28" id="pfilter-fil-1medium">
+                                                        <label for="pfilter-fil-1medium">medium</label> </li>
+                                                    <li> <input type="checkbox" value="449" data-pfilter="28" id="pfilter-fil-1750ml">
+                                                        <label for="pfilter-fil-1750ml">750ml</label> </li>
                                                 </ul>
                                             </li>
-                                            <li class="pro-d-inline-block"> <label>Light</label>
-                                                <ul class="pro-submenu prod-dropdown-content">
-                                                    <li> <input type="checkbox" value="79" data-pfilter="29"
-                                                            id="pfilter-fil-1low_light"> <label for="pfilter-fil-1low_light">low
-                                                            light</label> </li>
+                                            <li class="sr-d-inline-block"> <label>Light</label>
+                                                <ul class="sr-submenu sr-dropdown-content">
+                                                    <li> <input type="checkbox" value="79" data-pfilter="29" id="pfilter-fil-1low_light">
+                                                        <label for="pfilter-fil-1low_light">low light</label> </li>
                                                     <li> <input type="checkbox" value="82" data-pfilter="29"
-                                                            id="pfilter-fil-1bright_direct"> <label
-                                                            for="pfilter-fil-1bright_direct">bright direct</label> </li>
+                                                            id="pfilter-fil-1bright_direct"> <label for="pfilter-fil-1bright_direct">bright
+                                                            direct</label> </li>
                                                     <li> <input type="checkbox" value="84" data-pfilter="29"
                                                             id="pfilter-fil-1bright_medium_indirect"> <label
-                                                            for="pfilter-fil-1bright_medium_indirect">Bright-Medium Indirect</label>
-                                                    </li>
+                                                            for="pfilter-fil-1bright_medium_indirect">Bright-Medium Indirect</label> </li>
                                                 </ul>
                                             </li>
-                                            <li class="pro-d-inline-block"> <label>Benefit</label>
-                                                <ul class="pro-submenu prod-dropdown-content">
-                                                    <li> <input type="checkbox" value="80" data-pfilter="30"
-                                                            id="pfilter-fil-1pet_friendly"> <label
-                                                            for="pfilter-fil-1pet_friendly">pet friendly</label> </li>
+                                            <li class="sr-d-inline-block"> <label>Benefit</label>
+                                                <ul class="sr-submenu sr-dropdown-content">
+                                                    <li> <input type="checkbox" value="80" data-pfilter="30" id="pfilter-fil-1pet_friendly">
+                                                        <label for="pfilter-fil-1pet_friendly">pet friendly</label> </li>
                                                     <li> <input type="checkbox" value="83" data-pfilter="30"
-                                                            id="pfilter-fil-1air_purifying"> <label
-                                                            for="pfilter-fil-1air_purifying">Air Purifying</label> </li>
-                                                    <li> <input type="checkbox" value="85" data-pfilter="30"
-                                                            id="pfilter-fil-1easy_care"> <label for="pfilter-fil-1easy_care">easy
-                                                            care</label> </li>
+                                                            id="pfilter-fil-1air_purifying"> <label for="pfilter-fil-1air_purifying">Air
+                                                            Purifying</label> </li>
+                                                    <li> <input type="checkbox" value="85" data-pfilter="30" id="pfilter-fil-1easy_care">
+                                                        <label for="pfilter-fil-1easy_care">easy care</label> </li>
                                                 </ul>
                                             </li>
-                                            <li class="pro-d-inline-block"> <label>grape</label>
-                                                <ul class="pro-submenu prod-dropdown-content">
-                                                    <li> <input type="checkbox" value="448" data-pfilter="92"
-                                                            id="pfilter-fil-1bordeaux"> <label
-                                                            for="pfilter-fil-1bordeaux">bordeaux</label> </li>
+                                            <li class="sr-d-inline-block"> <label>grape</label>
+                                                <ul class="sr-submenu sr-dropdown-content">
+                                                    <li> <input type="checkbox" value="448" data-pfilter="92" id="pfilter-fil-1bordeaux">
+                                                        <label for="pfilter-fil-1bordeaux">bordeaux</label> </li>
                                                 </ul>
                                             </li>
-                                            <li class="apply-product-filter pro-d-inline-block"> <input type="button" value="Apply"
-                                                    class="prod-button prod-hide"> <input type="button" value="Clear"
-                                                    class="prod-button prod-hide"> </li>
+                                            <li class="apply-product-filter sr-d-inline-block"> <input type="button" value="Apply"
+                                                    class="sr-button sr-hide"> <input type="button" value="Clear" class="sr-button sr-hide">
+                                            </li>
                                         </ul>
                                     </form>
                                 </div>
                             </div>
-                            <div class="prod-filter pro-sort-wrapper" data-index="4"> <select class="pro-sort-filter"
+                            <div class="sr-filter sr-sort-wrapper" data-index="4"> <select class="sr-sort-filter"
                                     aria-label="Sort products">
                                     <option value="product_order">Default Order</option>
                                     <option value="created">Newest First</option>
@@ -1047,7 +1035,7 @@
                                     <option value="price_asc">Price: Low-High</option>
                                     <option value="price_desc">Price: High-Low</option>
                                 </select> </div>
-                            <div class="prod-filter pro-per-page-wrapper" data-index="5"> <select class="pro-per-page-filter"
+                            <div class="sr-filter sr-per-page-wrapper" data-index="5"> <select class="sr-per-page-filter"
                                     aria-label="Products per page">
                                     <option value="3"><span>Show</span> 3</option>
                                     <option value="10">10</option>
@@ -1055,7 +1043,7 @@
                                     <option value="50">50</option>
                                     <option value="100">100</option>
                                 </select> </div>
-                            <div class="prod-filter pro-currency-wrapper" data-index="6"> <select class="pro-currency-filter"
+                            <div class="sr-filter sr-currency-wrapper" data-index="6"> <select class="sr-currency-filter"
                                     aria-label="Choose currency">
                                     <option value="AED">AED</option>
                                     <option value="AFN">AFN</option>
@@ -1090,7 +1078,7 @@
                                     <option value="INR">INR</option>
                                     <option value="USD">USD</option>
                                 </select> </div>
-                            <div class="prod-filter pro-language-wrapper" data-index="7"> <select class="pro-language-filter"
+                            <div class="sr-filter sr-language-wrapper" data-index="7"> <select class="sr-language-filter"
                                     aria-label="Choose language">
                                     <option value="ar">(Arabic) عربي</option>
                                     <option value="zh">中国人 (Chinese)</option>
@@ -1412,7 +1400,7 @@
                     <div class="col-sm-12 col-md-7 slide-area">                
                         <svg width="62" height="50" viewBox="0 0 62 50" fill="none" class="quote-mark"><path d="M61.8 0C45.63 4.36 35.4 20.33 35.4 34.65 35.4 44.19 41.33 50 49.3 50 56.68 50 62 44.2 62 37.14c0-6.85-4.5-12.04-10.44-12.87-1.63-.2-2.25-.83-2.25-2.28 0-8.3 4.91-17.22 12.69-21.58L61.8 0zM26.6 0C10.44 4.36 0 20.33 0 34.65 0 44.19 6.14 50 13.91 50c7.37 0 12.9-5.8 12.9-12.86 0-6.85-4.5-12.04-10.44-12.87-1.84-.2-2.25-.83-2.25-2.28 0-8.3 4.91-17.22 12.69-21.58L26.6 0z"></path></svg>
                         <div class="slider">
-                            <ul class="testi-slides">
+                            <ul class="testislides">
                                 <li style="display: none;">
                                     <div class="testimonial row justify-content-center align-items-center">
                                         <div class="col-12">

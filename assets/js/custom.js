@@ -1,10 +1,13 @@
 $(document).ready(function() {
-    $(".prod-category-filter").click(function(){
-      $("#categories-filter .prod-dropdown-content").toggleClass("prod-hide");
-    });
-    $(".pro-product-filters-filter").click(function(){
-      $("#filters-filter .prod-dropdown-content").toggleClass("prod-hide");
-    });
+    $(".sr-category-filter").click(function(){
+        $("#categories-filter .sr-dropdown-content").toggleClass("sr-hide");
+        $("#filters-filter .sr-dropdown-content").addClass("sr-hide");
+      });
+      $(".sr-product-filters-filter").click(function(){
+        $("#filters-filter .sr-dropdown-content").toggleClass("sr-hide");
+        $("#categories-filter .sr-dropdown-content").addClass("sr-hide");
+      });
+      
     $('.register-tnc').on('click', function(e) {
         let tncDialog = bootbox.dialog({
             message: ' ',
@@ -148,7 +151,7 @@ $(document).ready(function() {
     }, 4000);
 });
 function InOut(elem) {
-    window.testi-slides = elem;
+    window.testislides = elem;
     elem.delay()
     .fadeIn(function() {
         elem.delay(5000)
@@ -165,13 +168,13 @@ function InOut(elem) {
 }
 
 $(function() {
-  $('.testi-slides li').fadeOut();
-  InOut($('.testi-slides li:first'));
+  $('.testislides li').fadeOut();
+  InOut($('.testislides li:first'));
 });
 
-// $(document).on('mouseleave','.testi-slides',  function() {
-//     $('.testi-slides li').hide();
-//     InOut($('.testi-slides li:first'));
+// $(document).on('mouseleave','.testislides',  function() {
+//     $('.testislides li').hide();
+//     InOut($('.testislides li:first'));
 // });
 
 //////////////// Utility Functions
